@@ -26,7 +26,7 @@ SECRET_KEY = '+9f2e)+d-q6-cg@#*0h0r+#t9+17j-s5!3qltw2b#33vt)*-=a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://emirandaportfolio.herokuapp.com/']
+ALLOWED_HOSTS = ['https://emirandaportfolio.herokuapp.com/','127.0.0.1']
 
 
 # Application definition
@@ -76,10 +76,18 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 DATABASES = {
+    # 'test': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # },
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dfehkdkn5qimuo',
+        'USER': 'sgwljamoqusfwe',
+        'PASSWORD': 'c70e4b95449aef8dcca594e14887d91e64b5b2ff9568a0e975be048abd5ae618',
+        'HOST': 'ec2-35-174-127-63.compute-1.amazonaws.com',
+        'PORT': '5432',
+    },
 }
 
 
