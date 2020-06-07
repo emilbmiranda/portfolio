@@ -41,7 +41,6 @@ class Skill(models.Model):
     REPORT = 'Report/Analytics'
     ETL = 'ETL'
     NON_TECHNICAL = 'Non-technical'
-    
     SKILL_TYPE_CHOICES = (
         (PROGRAMMING_LANGUAGE, 'Programming Language'),
         (DATABASE, 'Database'),
@@ -53,8 +52,7 @@ class Skill(models.Model):
     SKILL_SUBTYPE_CHOICES = (
         (PROFICIENT, 'Proficient'),
         (KNOWLEDGE, 'Knowledge of'),
-    )
-    
+    )  
     skill = models.CharField(max_length=100)
     skill_type = models.CharField(max_length=100, choices=SKILL_TYPE_CHOICES)
     skill_subtype = models.CharField(max_length=20, choices=SKILL_SUBTYPE_CHOICES, blank=True, null=True)
