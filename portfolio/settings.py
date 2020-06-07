@@ -26,7 +26,7 @@ SECRET_KEY = '+9f2e)+d-q6-cg@#*0h0r+#t9+17j-s5!3qltw2b#33vt)*-=a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://emirandaportfolio.herokuapp.com']
+ALLOWED_HOSTS = ['https://emirandaportfolio.herokuapp.com/']
 
 
 # Application definition
